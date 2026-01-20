@@ -1,3 +1,5 @@
+/* ----- Light mode ----- */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #E3EDFD;
@@ -10,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -28,14 +30,45 @@ a:hover {
 }
 
 .content {
-    background-color: #fff;
-    padding: 32px;
-    border-radius: 8px;
-    border-top: 10px solid #356DCA;
-    max-width: 80ch;
-    text-wrap: pretty;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  border-top: 10px solid #356DCA;
+  max-width: 80ch;
+  text-wrap: pretty;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
+}
+
+/* ----- Dark mode (automatic) ----- */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+
+  .content {
+    background-color: #020617;
+    border-top-color: #4f8cff;
+  }
+
+  h1 {
+    color: #f8fafc;
+  }
+
+  p {
+    color: #d1d5db;
+  }
+
+  a {
+    background-color: #4f8cff;
+    color: #020617;
+  }
+
+  a:hover {
+    background-color: #2563eb;
+  }
 }
