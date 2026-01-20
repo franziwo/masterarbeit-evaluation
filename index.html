@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Continue</title>
-    <script>
-      window.onload = () => {
-        const forms = [
-          "https://forms.gle/PkX8dehZbHjLNGdB9", 
-          "https://forms.gle/UuAnZcd9mrbMN4SQ6"
-        ];
-        window.location.href = forms[Math.floor(Math.random() * forms.length)];
-      };
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Umfrage zur Masterarbeit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <h1>Studie zur Evaluation von Backup-Tools</h1>
+    <p>Hallo 👋</p>
+    <p>Vielen Dank, dass du Interesse an meiner Studie zeigst.</p>
+    <p>Diese Umfrage wird im Rahmen der Evaluation Masterarbeit durchgeführt, die sich um das Thema Backup-Tools dreht. Diese Umfrage ist vor allem für Studierende gedacht, allerdings ist jede Antwort willkommen 😊</p>
+    <p>Die Teilnahme an der Umfrage ist hierbei vollkommen anonym. Ich erhebe keine personenbezogenen Daten, die Rückschlüsse zwischen deiner Person und deinen Antworten zulassen.</p>
+    <p>Die Umfrage dauert ca. 20min und wird in zwei zufällig zusammengestellten Gruppen durchgeführt. Um zum Formular deiner Gruppe zu kommen, drücke bitte auf "Weiter zur Umfrage".</p>
+    <p>Vielen Dank!</p>
 
-  <body></body>
+    <a href="#" onclick="goToRandomForm(event)">Weiter zur Umfrage</a>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
