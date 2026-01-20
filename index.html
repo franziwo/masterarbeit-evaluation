@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Continue</title>
+    <script>
+      function goToRandomForm(event) {
+        event.preventDefault();
+
+        const forms = [
+          "https://www.youtube.com",
+          "https://www.google.com"
+        ];
+
+        const randomForm =
+          forms[Math.floor(Math.random() * forms.length)];
+
+        window.location.href = randomForm;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Thank you for your participation</h2>
+    <p>
+      Please click the link below to continue to the next step.
+    </p>
+
+    <a href="#" onclick="goToRandomForm(event)">Continue</a>
+  </body>
+</html>
