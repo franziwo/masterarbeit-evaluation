@@ -2,8 +2,8 @@ function goToRandomForm(event) {
     event.preventDefault();
 
     const forms = [
-        "https://forms.gle/h1uBChMK3nStkbPh8", // Group A
-        "https://forms.gle/uYtE5pdw5sxCC4nA9" // Group B
+        "https://forms.gle/X7a1KCzqzby4Ag8SA", // Group A
+        "https://forms.gle/nh1QKF9Yp5aTEGjF8" // Group B
     ];
 
     const randomForm =
